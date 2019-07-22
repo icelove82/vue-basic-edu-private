@@ -1,0 +1,5 @@
+[
+  { "name": "냥이", "age": 1, "type": "cat" },
+  { "name": "멍이", "age": 2, "type": "dog" },
+  { "name": "꿀꿀이", "age": 3, "type": "pig" }
+]

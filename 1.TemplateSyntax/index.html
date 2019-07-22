@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>VueJS basic education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../styles.css"
+    />
+    <link rel="icon" href="../favicon.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <h1>1. 템플릿 문법</h1>
+
+    <div class="content">
+      <!-- Section 01 -->
+      <div id="section-01">
+        <span>{{ msg }}</span>
+      </div>
+
+      <br />
+
+      <!-- Section 02 -->
+      <div id="section-02">
+        <span v-once>{{ msg }}</span>
+      </div>
+
+      <br />
+
+      <!-- Section 03 -->
+      <div id="section-03">
+        <h5>사용자정보:</h5>
+        <div>이름: {{ userData.name }}</div>
+        <div>성별: {{ userData.gender === "M" ? "남" : "여" }}</div>
+        <div>나이: {{ 2019 - userData.age }}</div>
+        <div>소속: {{ userData.organzation.toUpperCase().substr(0, 6) }}</div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

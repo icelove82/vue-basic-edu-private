@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>VueJS basic education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../styles.css"
+    />
+    <link rel="icon" href="../favicon.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <h1>6. 조건부 렌더링</h1>
+
+    <div class="content">
+      <!-- Section 01 -->
+      <div id="section-01">
+        <div v-if="result === 'A'" style="background-color : red">
+          A
+        </div>
+        <div v-else-if="result === 'B'" style="background-color : green">
+          B
+        </div>
+        <div v-else-if="result === 'C'" style="background-color : blue">
+          C
+        </div>
+        <div v-else style="background-color : yellow">
+          Not A/B/C
+        </div>
+      </div>
+
+      <br />
+
+      <!-- Section 02 -->
+      <div id="section-02">
+        <template v-if="result">
+          <h5>Block Conditional Render</h5>
+          <p>Paragraph 1</p>
+          <p>Paragraph 2</p>
+        </template>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

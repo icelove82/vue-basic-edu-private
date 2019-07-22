@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>VueJS basic education</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../styles.css"
+    />
+    <link rel="icon" href="../favicon.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <h1>4. 클래스 바인딩</h1>
+
+    <div class="content">
+      <!-- Section 01 -->
+      <div id="section-01">
+        <div v-bind:class="{ active : isActive}">
+          <span>Class 설정 Demo: 1</span>
+        </div>
+      </div>
+
+      <br />
+
+      <!-- Section 02 -->
+      <div id="section-02">
+        <div class="static" :class="classObject">
+          <span>Class 설정 Demo: 2</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
