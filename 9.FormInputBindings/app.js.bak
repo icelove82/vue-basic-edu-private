@@ -8,7 +8,7 @@ let vm01 = new Vue({
   },
   watch: {
     message(newValue, oldValue) {
-      if (newValue.includes("zionex")) {
+      if (newValue.indexOf("zionex") >= 0) {
         alert("zionex 라는 문구를 입력 되었습니다.");
       }
     }
