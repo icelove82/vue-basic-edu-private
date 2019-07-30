@@ -5,7 +5,9 @@ let vm01 = new Vue({
     items: [
       { message: "List item 1" },
       { message: "List item 2" },
-      { message: "List item 3" }
+      { message: "List item 3" },
+      { message: "List item 4" },
+      { message: "List item 5" }
     ]
   }
 });
@@ -18,7 +20,9 @@ let vm02 = new Vue({
     items: [
       { id: 0, message: "List item 1" },
       { id: 1, message: "List item 2" },
-      { id: 2, message: "List item 3" }
+      { id: 2, message: "List item 3" },
+      { id: 3, message: "List item 4" },
+      { id: 4, message: "List item 5" }
     ]
   }
 });
