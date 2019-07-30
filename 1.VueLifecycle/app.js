@@ -7,21 +7,21 @@ let vm01 = new Vue({
     };
   },
   beforeCreate() {
-    console.log("0. Event => ::beforeCreate");
+    console.log("0. Lifecycle => ::beforeCreate");
   },
   created() {
-    console.log("1. Event => ::created");
+    console.log("1. Lifecycle => ::created");
   },
   beforeMount() {
-    console.log("2. Event => ::beforeMount");
+    console.log("2. Lifecycle => ::beforeMount");
   },
   mounted() {
-    console.log("3. Event => ::mounted");
+    console.log("3. Lifecycle => ::mounted");
   },
   beforeUpdate() {
-    console.log("Event => ::beforeUpdate");
+    console.log("Lifecycle => ::beforeUpdate");
   },
   updated() {
-    console.log("Event => ::updated");
+    console.log("Lifecycle => ::updated");
   }
 });
