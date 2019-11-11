@@ -8,7 +8,7 @@ let vm01 = new Vue({
   },
   watch: {
     inputData(newValue, oldValue) {
-      let alertMsg = "입력전: " + oldValue + " / " + "입력후: " + newValue;
+      let alertMsg = `입력전: + ${oldValue} / 입력후: ${newValue}`;
       alert(alertMsg);
     }
   }
