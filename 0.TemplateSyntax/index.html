@@ -19,6 +19,8 @@
     <div class="content">
       <!-- Section 01 -->
       <div id="section-01">
+        <span>#1:</span>
+        <br />
         <span>{{ msg }}</span>
       </div>
 
@@ -26,6 +28,8 @@
 
       <!-- Section 02 -->
       <div id="section-02">
+        <span>#2:</span>
+        <br />
         <span v-once>{{ msg }}</span>
       </div>
 
@@ -33,6 +37,7 @@
 
       <!-- Section 03 -->
       <div id="section-03">
+        <span>#3:</span>
         <h5>사용자정보:</h5>
         <div>이름: {{ userData.name }}</div>
         <div>성별: {{ userData.gender === "M" ? "남" : "여" }}</div>

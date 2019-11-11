@@ -19,6 +19,8 @@
     <div class="content">
       <!-- Section 01 -->
       <div id="section-01">
+        <span>#1:</span>
+        <br />
         <h5 style="background-color: antiquewhite">Inline 방식</h5>
         <p>해당 버튼이 {{ counter }} 번 클릭되었습니다.</p>
         <button v-on:click="counter += 1">Click</button>
@@ -28,6 +30,8 @@
 
       <!-- Section 02 -->
       <div id="section-02">
+        <span>#2:</span>
+        <br />
         <h5 style="background-color: antiquewhite">Method 방식</h5>
         <button @click="sort(0)">오름차순</button>
         <button @click="sort(1)">내린차순</button>
@@ -45,6 +49,8 @@
 
       <!-- Section 03 -->
       <div id="section-03">
+        <span>#3:</span>
+        <br />
         <h5 style="background-color: antiquewhite">Key 수식어</h5>
         <span>Enter 입력하여 실행: </span>
         <input @keyup.enter="submitEnter" :placeholder="placeholder01" />
