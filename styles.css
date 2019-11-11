@@ -108,3 +108,15 @@ button {
   margin-right: auto;
   width: 50%;
 }
+
+.active {
+  background: rgb(243, 242, 154);
+}
+
+.static {
+  background: rgb(56, 6, 238);
+}
+
+.static.active.danger {
+  background: rgb(233, 146, 146);
+}
