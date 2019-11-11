@@ -3,8 +3,8 @@ let vm01 = new Vue({
   el: "#section-01",
   data() {
     return {
-      data: 1,
-      msg: "hello"
+      data: 0,
+      msg: "Hello, World."
     };
   },
   beforeCreate() {
@@ -20,7 +20,7 @@ let vm01 = new Vue({
     console.log("3. Lifecycle => ::mounted");
   },
   beforeUpdate() {
-    if (this.msg === "hello") {
+    if (this.data % 2 === 0) {
       this.msg = "Hello, World.";
     } else {
       this.msg = "Hi, World.";
