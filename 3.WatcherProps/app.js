@@ -7,8 +7,9 @@ let vm01 = new Vue({
     };
   },
   watch: {
-    inputData() {
-      alert("입력 발생하였습니다.");
+    inputData(newValue, oldValue) {
+      let alertMsg = "입력전: " + oldValue + " / " + "입력후: " + newValue;
+      alert(alertMsg);
     }
   }
 });
@@ -18,13 +19,17 @@ let vm02 = new Vue({
   el: "#section-02",
   data() {
     return {
-      inputData: ""
+      inputData: "",
+      resultData: ""
     };
   },
   watch: {
     inputData(newValue, oldValue) {
-      let alertMsg = "입력전: " + oldValue + " / " + "입력후: " + newValue;
-      alert(alertMsg);
+      if (newValue.length > 0) {
+        this.resultData = `"${newValue}" 를 입력하였습니다.`;
+      } else {
+        this.resultData = "입력한 내용을 전부 지웠습니다.";
+      }
     }
   }
 });

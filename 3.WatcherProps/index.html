@@ -19,7 +19,7 @@
     <div class="content">
       <!-- Section 01 -->
       <div id="section-01">
-        <h5>입력 발생 시 Alert 창 발생:</h5>
+        <h5>입력 전/후 내용 표시:</h5>
         <input type="text" v-model="inputData" />
       </div>
 
@@ -27,8 +27,11 @@
 
       <!-- Section 02 -->
       <div id="section-02">
-        <h5>입력 전/후 내용 표시:</h5>
+        <h5>입력 내용을 표시하기:</h5>
         <input type="text" v-model="inputData" />
+        <br />
+        <br />
+        <span>{{ resultData }}</span>
       </div>
     </div>
 
