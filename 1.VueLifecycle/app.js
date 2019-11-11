@@ -23,7 +23,7 @@ let vm01 = new Vue({
     if (this.data % 2 === 0) {
       this.msg = "Hello, World.";
     } else {
-      this.msg = "Hi, World.";
+      this.msg = "안녕하세요.";
     }
     console.log("Lifecycle => ::beforeUpdate");
   },
